@@ -1,0 +1,115 @@
+body {
+  background-color: black;
+  margin: 0;
+}
+
+.container {
+  display: flex;
+}
+
+.container-image {
+  background-image: url(images/backgroundImage.jpg);
+  background-position: right;
+  background-size: auto;
+  background-repeat: no-repeat;
+  width: 70vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 10px;
+}
+
+img[src="images/logo.png"] {
+  width: 50px;
+  height: 100px;
+}
+
+.logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: white;
+  opacity: 0.3;
+  width: 100%;
+  height: 100px;
+  padding: 20px;
+  gap: 20px;
+  font-family: norse-bold;
+  font-size: 35px;
+}
+
+@font-face {
+  font-family: norse-bold;
+  src: url(images/Norse-Bold.otf);
+}
+
+.signUp {
+  font-family: "Courier New", Courier, monospace;
+  color: white;
+  padding: 50px;
+  font-size: 20px;
+}
+
+.container-signUp {
+  display: flex;
+}
+
+form {
+  padding: 50px 0px;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 80px;
+  width: 500px;
+}
+
+.rows {
+  display: flex;
+  flex-flow: column wrap;
+}
+
+input {
+  width: 200px;
+  margin-top: 5px;
+}
+
+button {
+  padding: 15px;
+  background-color: aliceblue;
+  border-radius: 10px;
+  font-size: 15px;
+  font-weight: bolder;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: black;
+  color: white;
+  border: none;
+}
+
+input:focus {
+  box-shadow: 0 0 5px 5px aqua;
+}
+
+input[type="password"] {
+  box-shadow: 0 0 5px 5px red;
+}
+
+.error_message {
+  font-size: 10px;
+  color: red;
+  margin: 10px;
+}
+
+.already {
+  margin-top: 50px;
+}
+
+.already > div {
+  display: inline-block;
+  color: blue;
+  cursor: pointer;
+}
